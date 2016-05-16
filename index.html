@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Workshop on tool integration in Galaxy environment | May 25th 2016 | Bérénice Batut</title>
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+        <link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="css/custom.css" id="theme">
+
+		<!-- Printing and PDF exports -->
+        <script>
+          if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'reveal.js/css/print/pdf.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+          }
+        </script>
+		<!--<script>
+            if (window.location.search.match(/print-pdf/gi)) {
+                document.write('<link rel="stylesheet" href="css/pdf.css" type="text/css">');
+            }
+        </script>-->
+
+		<!--[if lt IE 9]>
+        <script src="reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2 class="title">Workshop</h1>
+                    <h3 class="subtitle">Integration of tools in Galaxy environment</h1>
+                    <br/>
+
+					<img src="images/galaxy_logo.png" alt="Galaxy logo" class="no-border"/>
+					<br/>
+                    <br/>
+
+	                <em class="subtitle">Bérénice Batut &mdash; EA CIDAM </em>
+                    <br/>
+                    <em class="subtitle">May 25th, 2016 </em>
+				</section>
+
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        # Galaxy: the big picture
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### What is Galaxy?
+
+                        > Galaxy is an open, web-based platform for data intensive biomedical research. Whether on the free public server or your own instance, you can perform, reproduce, and share complete analyses.
+
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### What is Galaxy composed of?
+
+                        - Instances
+                            - [Free public servers](https://wiki.galaxyproject.org/PublicGalaxyServers)
+                                - [UseGalaxy.org](https://usegalaxy.org/)
+                            - Local instances
+                        - ToolSheds
+                            - [Main ToolShed](https://toolshed.g2.bx.psu.edu/)
+                            - Local ToolShed
+
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### What is a Galaxy instance?
+
+                        <img src="images/usegalaxy.png" alt="Galaxy instance" class="no-border"/>
+                        <small>[UseGalaxy.org](https://usegalaxy.org/)</small>
+
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### What is a Galaxy instance?
+
+                        <!--<img src="images/usegalaxy.png" alt="Galaxy instance" class="no-border"/>-->
+
+                        *mettre une image avec une instance, des outils sur un ordinateur (installation des outils)*
+
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### What is a Galaxy ToolShed?
+
+                        <img src="images/main_toolshed.png" alt="Galaxy ToolShed" class="no-border"/>
+                        <small>[Main ToolShed](https://toolshed.g2.bx.psu.edu/)</small>
+
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### What is a Galaxy ToolShed?
+
+                        <!--<img src="images/main_toolshed.png" alt="Galaxy ToolShed" class="no-border"/>-->
+
+                        *mettre une image avec un toolshed et des outils*
+
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Galaxy instances and ToolShed
+
+                        <!--<img src="images/main_toolshed.png" alt="Galaxy ToolShed" class="no-border"/>-->
+                        *mettre une image avec plusieurs toolshed, plusieurs instances, et des outils*
+                        *importance de la durée de vie d'un outil dans un toolshed, dans une instance*
+
+                        </script>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        # A tool in Galaxy
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### A tool in Galaxy
+                        
+                        *screenshot of a tool in Galaxy*
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Galaxy tool
+                        
+                        > An application specific, XML defined interface and associated documentation exposing any command line application as a form-driven Galaxy tool
+                        Ideally, as a shareable tool shed repository, supporting automated Galaxy installation with revision/version specific control of dependency binaries for reproducible analyses. 
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Wrapper
+
+                        - Description of the user interface
+                        - Link between the tool and Galaxy instance
+                            - how to invoke the tool
+                            - what options to pass
+                            - what files the tool will produce as output
+
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Wrapper
+
+                        ```
+                        <tool id="tool_id" name="Name of the tool" version="0.1.0">
+                            <requirements>
+                            </requirements>
+                            <stdio>
+                                <exit_code range="1:" />
+                            </stdio>
+                            <command><![CDATA[
+                                TODO: Fill in command template.
+                            ]]></command>
+                            <inputs>
+                            </inputs>
+                            <outputs>
+                            </outputs>
+                            <help><![CDATA[
+                                TODO: Fill in help.
+                            ]]></help>
+                        </tool>
+                        ```
+                        <small>[Galaxy Tool XML File](https://wiki.galaxyproject.org/Admin/Tools/ToolConfigSyntax)</small>
+
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Inputs
+                        
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Command
+                        
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Output
+                        
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Help
+                        
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Requirements and dependencies
+
+                        *gestion des dépendences*
+                        *tool_dependencies.xml* 
+                        </script>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        # Integrating a tool
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Good practices
+
+                        *image with Galaxy instance and Galaxy ToolShed*
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Planemo
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Planemo
+                        </script>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        # Summary
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Best practices
+                        
+                        - [Best pratices](http://planemo.readthedocs.io/en/latest/standards/docs/best_practices.html)
+                        - [Good examples](https://github.com/galaxyproject/tools-iuc)
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Checklist
+
+                        - creation of a dedicated repository
+                        - creation of .xml file
+                            planemo create
+                        - fill .xml file
+                        - write the tool_dependencies.xml
+                        - test the wrapper
+                            planemo lint .
+                        - initiation of shed.yml file
+                            planemo shed_init 
+                        - creation of toolshed repository
+                            planemo shed_create 
+                        - install and test it on local instance
+                        - improve it and push modification on toolshed
+                            planemo shed_update
+                        - add functional tests
+                        - run functional tests
+                            planemo test...
+
+                        </script>
+                    </section>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Thank You.
+
+                        ### Questions?
+
+                        <br>
+                        [http://asaim.github.io](http://asaim.github.io)
+                        <ul class="me">
+                            <li>
+                                <p><i class="fa fa-globe"></i><a href="http://bebatut.fr" title="website">bebatut.fr</a></p>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-github"></i><a href="https://github.com/bebatut" title="github">github.com/bebatut</a></p>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-twitter"></i><a href="https://twitter.com/bebatut" title="twitter">twitter.com/bebatut</a></p>
+                            </li>
+                        </ul>
+                    </script>
+                </section>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="reveal.js/lib/js/head.min.js"></script>
+        <script type="text/javascript" src="reveal.js/js/reveal.js"></script>
+        <script type="text/javascript">
+            Reveal.initialize({
+                slideNumber: !window.location.search.match(/print-pdf/gi),
+                history: true,
+
+                theme: Reveal.getQueryHash().theme,
+                transition: Reveal.getQueryHash().transition || 'concave',
+
+                dependencies: [
+                    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'js/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/notes/notes.js', async: true },
+                ]
+            });
+        </script>
+
+	</body>
+</html>
