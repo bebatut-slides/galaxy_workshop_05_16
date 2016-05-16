@@ -58,7 +58,8 @@
                 <section>
                     <section data-markdown>
                         <script type="text/template">
-                        # Galaxy: the big picture
+                        # Galaxy
+                        # the big picture
                         </script>
                     </section>
 
@@ -66,7 +67,40 @@
                         <script type="text/template">
                         ### What is Galaxy?
 
-                        > Galaxy is an open, web-based platform for data intensive biomedical research. Whether on the free public server or your own instance, you can perform, reproduce, and share complete analyses.
+                        > Galaxy is an open, web-based platform for data intensive biomedical research. 
+
+                        > Whether on the free public server or your own instance, you can perform, reproduce, and share complete analyses.
+
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### What is Galaxy composed of?
+
+                        - Instances
+                            - [Free public servers](https://wiki.galaxyproject.org/PublicGalaxyServers)
+                                - [UseGalaxy.org](https://usegalaxy.org/)
+                            - Local instances
+
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### What is a Galaxy instance?
+
+                        <img src="images/usegalaxy.png" alt="Galaxy instance" class="no-border"/>
+                        <small>[UseGalaxy.org](https://usegalaxy.org/)</small>
+
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### What is a Galaxy instance?
+
+                        <img src="images/galaxy_instance.png" alt="Galaxy instance" class="no-border"/>
 
                         </script>
                     </section>
@@ -88,21 +122,9 @@
 
                     <section data-markdown>
                         <script type="text/template">
-                        ### What is a Galaxy instance?
+                        ### What is a Galaxy ToolShed?
 
-                        <img src="images/usegalaxy.png" alt="Galaxy instance" class="no-border"/>
-                        <small>[UseGalaxy.org](https://usegalaxy.org/)</small>
-
-                        </script>
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
-                        ### What is a Galaxy instance?
-
-                        <!--<img src="images/usegalaxy.png" alt="Galaxy instance" class="no-border"/>-->
-
-                        *mettre une image avec une instance, des outils sur un ordinateur (installation des outils)*
+                        > Companion Galaxy web server for tools
 
                         </script>
                     </section>
@@ -121,9 +143,7 @@
                         <script type="text/template">
                         ### What is a Galaxy ToolShed?
 
-                        <!--<img src="images/main_toolshed.png" alt="Galaxy ToolShed" class="no-border"/>-->
-
-                        *mettre une image avec un toolshed et des outils*
+                        <img src="images/galaxy_toolshed.png" alt="Galaxy ToolShed" class="no-border"/>
 
                         </script>
                     </section>
@@ -132,9 +152,7 @@
                         <script type="text/template">
                         ### Galaxy instances and ToolShed
 
-                        <!--<img src="images/main_toolshed.png" alt="Galaxy ToolShed" class="no-border"/>-->
-                        *mettre une image avec plusieurs toolshed, plusieurs instances, et des outils*
-                        *importance de la durée de vie d'un outil dans un toolshed, dans une instance*
+                        <img src="images/toolshed_instance.png" alt="Galaxy ToolShed" class="no-border" height=500/>
 
                         </script>
                     </section>
@@ -151,7 +169,12 @@
                         <script type="text/template">
                         ### A tool in Galaxy
                         
-                        *screenshot of a tool in Galaxy*
+                        <img src="images/trimmomatic_screenshot.png" alt="Galaxy ToolShed" class="no-border" height=550/>
+
+                        *decrire le sortmerna wrapper*
+
+                        https://github.com/Public-Health-Bioinformatics/galaxy-tool-tutorials
+
                         </script>
                     </section>
 
@@ -160,7 +183,8 @@
                         ### Galaxy tool
                         
                         > An application specific, XML defined interface and associated documentation exposing any command line application as a form-driven Galaxy tool
-                        Ideally, as a shareable tool shed repository, supporting automated Galaxy installation with revision/version specific control of dependency binaries for reproducible analyses. 
+
+                        > Ideally, as a shareable tool shed repository, supporting automated Galaxy installation with revision/version specific control of dependency binaries for reproducible analyses. 
                         </script>
                     </section>
 
@@ -207,21 +231,107 @@
 
                     <section data-markdown>
                         <script type="text/template">
-                        ### Inputs
-                        
-                        </script>
-                    </section>
-
-                    <section data-markdown>
-                        <script type="text/template">
                         ### Command
+
+                        ```
+                        command
+                        ```
+
+                        *sortmerna*
+
+                        - any Linux shell, Python, Java, ...
                         
                         </script>
                     </section>
 
                     <section data-markdown>
                         <script type="text/template">
-                        ### Output
+                        ### Inputs
+
+                        ```
+                        <inputs>
+
+                        </inputs>
+                        ```
+
+                        - Description of the user interface
+                        - Options to pass
+                        
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Data inputs
+
+                        ```
+                        <param name="" type="data" format="" 
+                            label="" multiple="false" help=""/>
+                        ```
+                        
+                        *mettre une image de ce que ca rend*
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Other type inputs
+
+                        ```
+                        <param name="" type="data" format="" 
+                            label="" multiple="false" help=""/>
+                        ```
+                        
+                        *mettre une image de ce que ca rend*
+
+                        integer
+                        float
+                        boolean
+                        select
+                        text
+                        [Other](https://wiki.galaxyproject.org/Admin/Tools/ToolConfigSyntax) 
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Multiple inputs
+
+                        ```
+                        <repeat>
+                            <param name="" type="data" format="" 
+                            label="" multiple="false" help=""/>
+                        </repeat>
+                        ```
+                        
+                        *mettre une image de ce que ca rend*
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Outputs
+
+                        ```
+                        <outputs>
+                            <data name="" format="" label=""/>
+                        </outputs>
+                        ```
+                        
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Conditional outputs
+
+                        ```
+                        <outputs>
+                            <data name="" format="" label="">
+                                <filter></filter>
+                            </data>
+                        </outputs>
+                        ```
                         
                         </script>
                     </section>
@@ -229,6 +339,12 @@
                     <section data-markdown>
                         <script type="text/template">
                         ### Help
+
+                        ```
+                        <help>
+
+                        </help>
+                        ```
                         
                         </script>
                     </section>
@@ -237,8 +353,28 @@
                         <script type="text/template">
                         ### Requirements and dependencies
 
+                        ```
+                        <requirements>
+                        </requirements>
+                        ```
+
                         *gestion des dépendences*
-                        *tool_dependencies.xml* 
+
+                        *decrire tool_dependencies.xml* 
+
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Wrapper
+
+                        ```
+                        sortmerna/
+                            |_ sortmerna.xml
+                            |_ tool_dependencies.xml
+                            |_ test_data/
+                        ```
                         </script>
                     </section>
 
@@ -255,21 +391,35 @@
                         <script type="text/template">
                         ### Good practices
 
-                        *image with Galaxy instance and Galaxy ToolShed*
+                        <img src="images/toolshed_instance.png" alt="Galaxy ToolShed" class="no-border" height=500/>
                         </script>
                     </section>
 
                     <section data-markdown>
                         <script type="text/template">
-                        ### Planemo
+                        <img src="images/planemo-logo.png" alt="Galaxy ToolShed" class="no-border"/>
+
+                        > Command-line utilities to assist in building and publishing Galaxy tools.
                         </script>
                     </section>
 
                     <section data-markdown>
                         <script type="text/template">
-                        ### Planemo
+                        ### Building Galaxy Tools
+
+                        <img src="images/planemo_tool_building.png" alt="Building tools" class="no-border"/>
+
                         </script>
                     </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                        ### Publishing to the ToolShed
+
+                        <img src="images/planemo_toolshed_publishing.png" alt="Publishing on ToolShed" class="no-border"/>
+                        </script>
+                    </section>
+
 
                 </section>
 
