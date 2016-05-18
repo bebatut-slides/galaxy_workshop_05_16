@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="galaxy_instance_detailed_screenshot.svg">
+   sodipodi:docname="galaxy_instance_detailed_screenshot.png">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -119,7 +119,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
