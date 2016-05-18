@@ -20,10 +20,10 @@
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="168.666015625" width="302.0" x="391.0" y="231.8310546875"/>
+              <y:Geometry height="168.666015625" width="336.0" x="374.0" y="231.8310546875"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.666015625" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="302.0" x="0.0" y="0.0">Galaxy ToolShed</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.666015625" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="336.0" x="0.0" y="0.0">Galaxy ToolShed</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -46,10 +46,10 @@
         <node id="n0::n0">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.process">
-              <y:Geometry height="51.0" width="129.0" x="406.0" y="268.4970703125"/>
+              <y:Geometry height="51.0" width="146.0" x="389.0" y="268.4970703125"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="custom" textColor="#000000" visible="true" width="110.177734375" x="9.4111328125" y="16.43359375">Wrapper for Tool1<y:LabelModel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.666015625" modelName="custom" textColor="#000000" visible="true" width="136.72216796875" x="4.638916015625" y="14.6669921875">Wrapper for Tool1<y:LabelModel>
                   <y:SmartNodeLabelModel distance="4.0"/>
                 </y:LabelModel>
                 <y:ModelParameter>
@@ -62,10 +62,10 @@
         <node id="n0::n1">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.process">
-              <y:Geometry height="51.0" width="129.0" x="406.0" y="334.4970703125"/>
+              <y:Geometry height="51.0" width="146.0" x="389.0" y="334.4970703125"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="custom" textColor="#000000" visible="true" width="110.177734375" x="9.4111328125" y="16.43359375">Wrapper for Tool2<y:LabelModel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.666015625" modelName="custom" textColor="#000000" visible="true" width="136.72216796875" x="4.638916015625" y="14.6669921875">Wrapper for Tool2<y:LabelModel>
                   <y:SmartNodeLabelModel distance="4.0"/>
                 </y:LabelModel>
                 <y:ModelParameter>
@@ -78,10 +78,10 @@
         <node id="n0::n2">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.process">
-              <y:Geometry height="51.0" width="129.0" x="549.0" y="268.4970703125"/>
+              <y:Geometry height="51.0" width="146.0" x="549.0" y="268.4970703125"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="custom" textColor="#000000" visible="true" width="110.177734375" x="9.4111328125" y="16.43359375">Wrapper for Tool3<y:LabelModel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.666015625" modelName="custom" textColor="#000000" visible="true" width="136.72216796875" x="4.638916015625" y="14.6669921875">Wrapper for Tool3<y:LabelModel>
                   <y:SmartNodeLabelModel distance="4.0"/>
                 </y:LabelModel>
                 <y:ModelParameter>
@@ -94,10 +94,10 @@
         <node id="n0::n3">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.process">
-              <y:Geometry height="51.0" width="129.0" x="549.0" y="334.4970703125"/>
+              <y:Geometry height="51.0" width="146.0" x="549.0" y="334.4970703125"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="custom" textColor="#000000" visible="true" width="111.455078125" x="8.7724609375" y="16.43359375">Wrapper for ToolN<y:LabelModel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.666015625" modelName="custom" textColor="#000000" visible="true" width="138.31884765625" x="3.840576171875" y="14.6669921875">Wrapper for ToolN<y:LabelModel>
                   <y:SmartNodeLabelModel distance="4.0"/>
                 </y:LabelModel>
                 <y:ModelParameter>

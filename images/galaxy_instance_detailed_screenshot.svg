@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="galaxy_instance_detailed_screenshot.png">
+   sodipodi:docname="galaxy_instance_detailed_screenshot.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="1004.5714"
-     inkscape:cy="529.28572"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="833.14283"
+     inkscape:cy="129.28572"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -119,7 +119,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -162,14 +162,14 @@
            id="flowPara3072">List of available tools</flowPara></flowRoot>    </g>
     <g
        id="g4692"
-       transform="translate(80,7.1428571)">
+       transform="translate(82.020305,29.366213)">
       <rect
          ry="9.9999828"
          rx="12.857142"
          y="600.21936"
          x="141.42851"
-         height="117.14275"
-         width="208.57155"
+         height="77.142761"
+         width="209.28583"
          id="rect4623-5"
          style="fill:#000000;fill-opacity:1;stroke:none" />
       <flowRoot
@@ -184,10 +184,10 @@
              height="195.71428"
              width="268.57144"
              id="rect3070-2" /></flowRegion><flowPara
-           id="flowPara3072-5">Tool web form</flowPara></flowRoot>    </g>
+           id="flowPara3072-5">Wrapper</flowPara></flowRoot>    </g>
     <g
        id="g4699"
-       transform="translate(5.7142857,-47.142857)">
+       transform="translate(5.7142857,-69.366213)">
       <rect
          ry="9.9999828"
          rx="12.857142"
