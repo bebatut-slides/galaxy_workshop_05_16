@@ -7,6 +7,7 @@ Workshop on tool integration in Galaxy environment
 $ git clone https://github.com/bebatut-slides/galaxy_workshop_05_16.git
 $ git submodule init
 $ git submodule update
+$ git clone https://github.com/astefanutti/decktape/
 $ cd decktape
 ```
 
